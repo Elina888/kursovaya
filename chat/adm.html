@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" href="css/adm-chat.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/add_adm.js"></script>
+
+    <title>Chat</title>
+</head>
+<body>
+<!-- admin chat -->
+<div class="window">
+    <div class="chats">
+        <div class="head">
+            <h1>Чаты</h1>
+        </div>
+        <div class="users">
+            <form id="chat-select" onsubmit="return false;"></form>
+        </div>
+    </div>
+    <div class="curchat">
+        <div class="head" id="head"></div>
+
+        <div class="adm-messages" id="adm-messages"></div>
+
+        <div class="send-adm">
+            <form id="adm-submit">
+                <input type="text" id="adm-msg" name="adm-msg" class="adm-msg" placeholder="Введите сообщение" autocomplete="off" autofocus>
+                <input type="hidden" type="submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--            -->
+</body>
+</html>

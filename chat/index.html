@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" href="css/user-chat.css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/add_user.js"></script>
+
+    <title>Chat</title>
+</head>
+<body>
+    <!-- user chat -->
+    <div id="live-chat">
+        <header class="clearfix">
+            <a href="#" class="chat-close">X</a>
+            <h4>Чат с администратором</h4>
+        </header>
+        <div class="chat">
+            <div id="chat-history" name="chat-history" class="chat-history"></div>
+            <form id="chatroom">
+                <fieldset>
+                    <input class="user-inp" id="message" name="message" type="text" placeholder="Напишите нам!" autocomplete="off" autofocus>
+                    <input type="hidden" type="submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <script src="js/showhide.js"></script>
+    <!--                -->
+</body>
+</html>
